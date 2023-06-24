@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Story to Video Generation</title>
+  <style>
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    th {
+      border: 1px solid black;
+      padding: 8px;
+      text-align: center;
+    }
+    td {
+      border: 1px solid black;
+      padding: 8px;
+      text-align: left;
+    }
+    th {
+      background-color: #DDDDDD;
+    }
+  </style>
+</head>
+<body>
+  <h1>Generated Video Samples</h1>
+  <table>
+    <tr>
+      <th>Story</th>
+      <th>Ours</th>
+      <th>T2V-Zero</th>
+      <th>VF</th>
+    </tr>
+    <tr>
+      <td>1. A cozy cabin nestled in the heart of the forest welcomes weary travelers.<br>
+        2. Smoke rises from the chimney, carrying the aroma of crackling firewood.<br>
+       3. Sunlight filters through the branches, casting patterns of warmth on the cabin's wooden walls.<br>
+        4. The sound of chirping birds serenades the tranquil surroundings.<br>
+       5. The door creaks open, inviting guests into a haven of comfort and relaxation.<br></td>
+      <td><video width="320" height="240" controls autoplay muted>
+        <source src="./newvideo/ours/story_1.mp4" type="video/mp4">
+      </video></td>
+      <td><video width="320" height="240" controls autoplay muted>
+        <source src="./newvideo/t2vz/story_1.mp4" type="video/mp4">
+      </video></td>
+      <td><video width="320" height="240" controls autoplay muted>
+        <source src="./newvideo/videofusion/story_1.mp4" type="video/mp4">
+      </video></td>
+    </tr>
+    <tr>
+      <td>1. In a peaceful garden, a gardener tends to the plants, nurturing them with care .<br>
+          2. They dig into the earth, planting seeds that hold the promise of future growth .<br>
+          3. With gentle hands, they water and prune, ensuring the garden thrives .<br>
+          4. Each bloom that emerges is a testament to their hard work and dedication .<br>
+          5. Surrounded by nature's beauty, the gardener finds solace and fulfillment in their craft.<br></td>
+      <td><video width="320" height="240" controls autoplay muted>
+        <source src="./newvideo/ours/story_10.mp4" type="video/mp4">
+      </video></td>
+      <td><video width="320" height="240" controls autoplay muted>
+        <source src="./newvideo/t2vz/story_10.mp4" type="video/mp4">
+      </video></td>
+      <td><video width="320" height="240" controls autoplay muted>
+        <source src="./newvideo/videofusion/story_10.mp4" type="video/mp4">
+      </video></td>
+    </tr>
+    <tr>
+      <td>1. The ancient castle stands proudly on the hill, a majestic symbol of history and power .<br>
+          2. Turrets reach towards the sky, silhouetted against the backdrop of a crimson sunset .<br>
+          3. The wind whispers secrets as it weaves through the ancient stones, carrying tales of bygone eras .<br>
+          4. Vines climb the weathered walls, adding a touch of nature's elegance to the aged fortress .<br>
+          5. The castle guards its mysteries with unwavering stoicism, inviting you to explore its timeless halls .<br>
+      </td>
+      <td><video width="320" height="240" controls autoplay muted>
+        <source src="./newvideo/ours/story_12.mp4" type="video/mp4">
+      </video></td>
+      <td><video width="320" height="240" controls autoplay muted>
+        <source src="./newvideo/t2vz/story_12.mp4" type="video/mp4">
+      </video></td>
+      <td><video width="320" height="240" controls autoplay muted>
+        <source src="./newvideo/videofusion/story_12.mp4" type="video/mp4">
+      </video></td>
+    </tr>
+    <tr>
+      <td>1. A man admires the sparkling lights on the houses as he walks through the neighborhood .<br>
+          2. He purchases a gift for a dear friend at a local holiday market .<br>
+          3. Sitting in a cozy café, he sips a warm drink, enjoying the holiday ambiance .<br>
+          4. Donning a festive hat, he takes a leisurely stroll through the park, breathing in the crisp winter air .<br>
+          5. Back home, he settles in with a good book, immersing himself in a Christmas tale .<br></td>
+      <td><video width="320" height="240" controls autoplay muted>
+        <source src="./newvideo/ours/story_15.mp4" type="video/mp4">
+      </video></td>
+      <td><video width="320" height="240" controls autoplay muted>
+        <source src="./newvideo/t2vz/story_15.mp4" type="video/mp4">
+      </video></td>
+      <td><video width="320" height="240" controls autoplay muted>
+        <source src="./newvideo/videofusion/story_15.mp4" type="video/mp4">
+      </video></td>
+    </tr>
+    <tr>
+      <td> 1. The park is blanketed in snow, and a person takes a peaceful walk amidst the winter beauty .<br>
+          2. They pause to watch children building snowmen, their laughter echoing in the frosty air .<br>
+          3. Bundled up in a cozy scarf, they sip on hot chocolate from a thermos, savoring the warmth .<br>
+          4. Continuing their stroll, they come across a festive holiday market, bustling with vendors and shoppers .<br>
+          5. In awe of the twinkling lights and holiday decorations, they immerse themselves in the joyful atmosphere .<br>
+      </td>
+      <td><video width="320" height="240" controls autoplay muted>
+        <source src="./newvideo/ours/story_17.mp4" type="video/mp4">
+      </video></td>
+      <td><video width="320" height="240" controls autoplay muted>
+        <source src="./newvideo/t2vz/story_17.mp4" type="video/mp4">
+      </video></td>
+      <td><video width="320" height="240" controls autoplay muted>
+        <source src="./newvideo/videofusion/story_17.mp4" type="video/mp4">
+      </video></td>
+    </tr>
+    <tr>
+      <td>1. A gentle stream meanders through the meadow, its crystal-clear waters reflecting the surrounding beauty .<br>
+          2. Fish dart beneath the surface, creating ripples that distort the mirrored image .<br>
+          3. Wildflowers bloom along the stream's banks, their vibrant petals painting a picturesque scene .<br>
+          4. The murmur of water fills the air, a soothing soundtrack to the serenity of the natural world .<br>
+          5. The stream is a source of life and tranquility, a gentle reminder of the harmony that exists in nature .<br></td>
+      <td><video width="320" height="240" controls autoplay muted>
+        <source src="./newvideo/ours/story_18.mp4" type="video/mp4">
+      </video></td>
+      <td><video width="320" height="240" controls autoplay muted>
+        <source src="./newvideo/t2vz/story_18.mp4" type="video/mp4">
+      </video></td>
+      <td><video width="320" height="240" controls autoplay muted>
+        <source src="./newvideo/videofusion/story_18.mp4" type="video/mp4">
+      </video></td>
+    </tr>
+    <tr>
+      <td>1. The roaring waterfall cascades down with unyielding force, its spray creating a refreshing mist .<br>
+          2. Rocks glisten with moisture, adorned with delicate moss and ferns .<br>
+          3. The sound of rushing water fills the air, overpowering all other noises .<br>
+          4. Rainbows form in the spray, their vibrant colors stretching across the waterfall's path .<br>
+          5. The waterfall is a natural masterpiece, a testament to nature's raw power and beauty .<br></td>
+      <td><video width="320" height="240" controls autoplay muted>
+        <source src="./newvideo/ours/story_20.mp4" type="video/mp4">
+      </video></td>
+      <td><video width="320" height="240" controls autoplay muted>
+        <source src="./newvideo/t2vz/story_20.mp4" type="video/mp4">
+      </video></td>
+      <td><video width="320" height="240" controls autoplay muted>
+        <source src="./newvideo/videofusion/story_20.mp4" type="video/mp4">
+      </video></td>
+    </tr>
+
+    <tr>
+      <td>1. A snow-covered landscape sparkles under a clear winter sky, its pristine beauty captivating the eye .<br>
+          2. The air is crisp and still, carrying the hushed whispers of winter's embrace .<br>
+          3. Snowflakes fall gently from the heavens, landing softly on the ground and trees .<br>
+          4. Footprints mark a solitary path, a testament to the solitude and serenity of the winter wonderland .<br>
+          5. The snowy landscape is a tranquil sanctuary, inviting reflection and appreciation for nature's ever-changing beauty .<br></td>
+      <td><video width="320" height="240" controls autoplay muted>
+        <source src="./newvideo/ours/story_24.mp4" type="video/mp4">
+      </video></td>
+      <td><video width="320" height="240" controls autoplay muted>
+        <source src="./newvideo/t2vz/story_24.mp4" type="video/mp4">
+      </video></td>
+      <td><video width="320" height="240" controls autoplay muted>
+        <source src="./newvideo/videofusion/story_24.mp4" type="video/mp4">
+      </video></td>
+    </tr>
+    <tr>
+      <td>1. A vibrant rainbow arcs across the sky, its colors merging and blending in harmonious unity .<br>
+          2. Clouds part to reveal a patch of blue, creating a stunning backdrop for nature's artwork .<br>
+          3. Raindrops glisten on leaves and petals, a reminder of the nourishing touch of water .<br>
+          4. The sound of laughter fills the air as children play beneath the colorful canopy .<br>
+          5. The rainbow is a symbol of hope and joy, a fleeting moment of beauty in the ever-changing sky .<br></td>
+      <td><video width="320" height="240" controls autoplay muted>
+        <source src="./newvideo/ours/story_25.mp4" type="video/mp4">
+      </video></td>
+      <td><video width="320" height="240" controls autoplay muted>
+        <source src="./newvideo/t2vz/story_25.mp4" type="video/mp4">
+      </video></td>
+      <td><video width="320" height="240" controls autoplay muted>
+        <source src="./newvideo/videofusion/story_25.mp4" type="video/mp4">
+      </video></td>
+    </tr><tr>
+      <td>1. A blanket of snow covers the landscape, transforming the world into a winter wonderland .<br>
+          2. Snowflakes gently fall from the sky, each one unique in its delicate design .<br>
+          3. Footprints mark the untouched snow, a testament to the creatures that roam this wintry realm .<br>
+          4. Trees stand tall, their branches laden with glistening icicles, sparkling like nature's chandeliers .<br>
+          5. The winter scene is serene and peaceful, a frozen tableau of beauty and hushed tranquility .<br></td>
+      <td><video width="320" height="240" controls autoplay muted>
+        <source src="./newvideo/ours/story_30.mp4" type="video/mp4">
+      </video></td>
+      <td><video width="320" height="240" controls autoplay muted>
+        <source src="./newvideo/t2vz/story_30.mp4" type="video/mp4">
+      </video></td>
+      <td><video width="320" height="240" controls autoplay muted>
+        <source src="./newvideo/videofusion/story_30.mp4" type="video/mp4">
+      </video></td>
+    </tr>
+    <tr>
+      <td>1. A winding path leads through a dense forest, its moss-covered stones hinting at the passage of time .<br>
+          2. Sunlight filters through the canopy, casting ethereal rays of light onto the forest floor .<br>
+          3. Birds sing their melodic songs, filling the air with nature's harmonies .<br>
+          4. Ferns unfurl their delicate fronds, adding a touch of green to the earthy landscape .<br>
+          5. The forest is a sanctuary of tranquility, where time stands still and the beauty of nature unfolds .<br></td>
+      <td><video width="320" height="240" controls autoplay muted>
+        <source src="./newvideo/ours/story_31.mp4" type="video/mp4">
+      </video></td>
+      <td><video width="320" height="240" controls autoplay muted>
+        <source src="./newvideo/t2vz/story_31.mp4" type="video/mp4">
+      </video></td>
+      <td><video width="320" height="240" controls autoplay muted>
+        <source src="./newvideo/videofusion/story_31.mp4" type="video/mp4">
+      </video></td>
+    </tr>
+    <tr>
+      <td>1. The sun rises over the horizon, painting the sky in shades of pink, orange, and gold .<br>
+          2. Birds greet the morning with their cheerful melodies, announcing the arrival of a new day .<br>
+          3. Dew glistens on blades of grass, reflecting the soft light of dawn like a thousand tiny diamonds .<br>
+          4. Flowers bloom, their vibrant colors adding a touch of joy to the awakening world .<br>
+          5. The morning unfolds with the promise of endless possibilities, a fresh start filled with hope and optimism .<br></td>
+      <td><video width="320" height="240" controls autoplay muted>
+        <source src="./newvideo/ours/story_32.mp4" type="video/mp4">
+      </video></td>
+      <td><video width="320" height="240" controls autoplay muted>
+        <source src="./newvideo/t2vz/story_32.mp4" type="video/mp4">
+      </video></td>
+      <td><video width="320" height="240" controls autoplay muted>
+        <source src="./newvideo/videofusion/story_32.mp4" type="video/mp4">
+      </video></td>
+    </tr>
+    <tr>
+      <td>1. A majestic mountain range stretches towards the heavens, its peaks reaching for the sky .<br>
+          2. Snow-capped summits glisten in the sunlight, contrasting against the deep blue of the sky .<br>
+          3. Rivers cascade down the slopes, carving paths through rugged terrain with their relentless flow .<br>
+          4. Eagles soar above, riding the thermals and surveying the vast wilderness below .<br>
+          5. he mountains stand as guardians of nature's grandeur, offering a sense of awe and inspiration to all who behold them .<br></td>
+      <td><video width="320" height="240" controls autoplay muted>
+        <source src="./newvideo/ours/story_33.mp4" type="video/mp4">
+      </video></td>
+      <td><video width="320" height="240" controls autoplay muted>
+        <source src="./newvideo/t2vz/story_33.mp4" type="video/mp4">
+      </video></td>
+      <td><video width="320" height="240" controls autoplay muted>
+        <source src="./newvideo/videofusion/story_33.mp4" type="video/mp4">
+      </video></td>
+    </tr>
+    <tr>
+      <td>1. A quaint village nestled in a picturesque valley, surrounded by rolling hills and peaceful meadows .<br>
+          2. Colorful houses line the cobblestone streets, each one with its unique charm and character .<br>
+          3. Villagers go about their daily lives, exchanging friendly greetings and sharing stories of the day .<br>
+          4. Gardens bloom with vibrant flowers, adding a splash of color to the idyllic scene .<br>
+          5. The village is a place of community and warmth, where time seems to slow down and life feels simpler .<br></td>
+      <td><video width="320" height="240" controls autoplay muted>
+        <source src="./newvideo/ours/story_34.mp4" type="video/mp4">
+      </video></td>
+      <td><video width="320" height="240" controls autoplay muted>
+        <source src="./newvideo/t2vz/story_34.mp4" type="video/mp4">
+      </video></td>
+      <td><video width="320" height="240" controls autoplay muted>
+        <source src="./newvideo/videofusion/story_34.mp4" type="video/mp4">
+      </video></td>
+    </tr>
+    <tr>
+      <td>1. A vast desert stretches as far as the eye can see, its golden sands shimmering under the scorching sun .<br>
+          2. Heat waves distort the horizon, creating a mirage of distant oases and hidden treasures .<br>
+          3. Cacti stand tall and resilient, their prickly spines providing protection in this harsh environment .<br>
+        4. A lone nomad walks the dunes, leaving footprints behind as they navigate the arid landscape .<br>
+        5. The desert is a place of solitude and endurance, where survival is a testament to the strength of both nature and the human spirit .<br></td>
+      <td><video width="320" height="240" controls autoplay muted>
+        <source src="./newvideo/ours/story_35.mp4" type="video/mp4">
+      </video></td>
+      <td><video width="320" height="240" controls autoplay muted>
+        <source src="./newvideo/t2vz/story_35.mp4" type="video/mp4">
+      </video></td>
+      <td><video width="320" height="240" controls autoplay muted>
+        <source src="./newvideo/videofusion/story_35.mp4" type="video/mp4">
+      </video></td>
+    </tr>
+    <tr>
+      <td>1. The sun sets in a blaze of fiery hues, painting the sky with a breathtaking display of colors .<br>
+        2. Clouds catch the golden light, creating a celestial canvas that seems almost surreal .<br>
+        3. Silhouettes of trees stand against the radiant backdrop, their branches reaching towards the fading light .<br>
+        4. Stars begin to twinkle in the darkening sky, each one a tiny speck of wonder in the vast expanse above .<br>
+        5. The sunset is a fleeting masterpiece, a reminder of the beauty that exists in the transient moments of life .<br></td>
+      <td><video width="320" height="240" controls autoplay muted>
+        <source src="./newvideo/ours/story_43.mp4" type="video/mp4">
+      </video></td>
+      <td><video width="320" height="240" controls autoplay muted>
+        <source src="./newvideo/t2vz/story_43.mp4" type="video/mp4">
+      </video></td>
+      <td><video width="320" height="240" controls autoplay muted>
+        <source src="./newvideo/videofusion/story_43.mp4" type="video/mp4">
+      </video></td>
+    </tr>
+    <tr>
+      <td>1. The sun sets in a blaze of fiery hues, painting the sky with a breathtaking display of colors .<br>
+          2. Clouds catch the golden light, creating a celestial canvas that seems almost surreal .<br>
+          3. Silhouettes of trees stand against the radiant backdrop, their branches reaching towards the fading light .<br>
+          4. Stars begin to twinkle in the darkening sky, each one a tiny speck of wonder in the vast expanse above .<br>
+          5. The sunset is a fleeting masterpiece, a reminder of the beauty that exists in the transient moments of life .<br></td>
+      <td><video width="320" height="240" controls autoplay muted>
+        <source src="./newvideo/ours/story_53.mp4" type="video/mp4">
+      </video></td>
+      <td><video width="320" height="240" controls autoplay muted>
+        <source src="./newvideo/t2vz/story_53.mp4" type="video/mp4">
+      </video></td>
+      <td><video width="320" height="240" controls autoplay muted>
+        <source src="./newvideo/videofusion/story_53.mp4" type="video/mp4">
+      </video></td>
+    </tr>
+    <tr>
+      <td>1. The mountain peak pierces the sky, its majestic silhouette a reminder of nature's grandeur .<br>
+          2. Clouds caress the mountaintop, enveloping it in an ethereal embrace .<br>
+          3. Hikers trek along the winding trail, their determination mirrored in each step .<br>
+          4. Alpine flowers bloom in vibrant bursts of color, defying the harshness of the high altitude .<br>
+          5. The mountain is a symbol of challenge and triumph, where the journey is as rewarding as the summit .<br></td>
+      <td><video width="320" height="240" controls autoplay muted>
+        <source src="./newvideo/ours/story_56.mp4" type="video/mp4">
+      </video></td>
+      <td><video width="320" height="240" controls autoplay muted>
+        <source src="./newvideo/t2vz/story_56.mp4" type="video/mp4">
+      </video></td>
+      <td><video width="320" height="240" controls autoplay muted>
+        <source src="./newvideo/videofusion/story_56.mp4" type="video/mp4">
+      </video></td>
+    </tr>
+    <tr>
+      <td>1. The wedding ceremony takes place in a quaint chapel, adorned with delicate flowers and soft candlelight .<br>
+          2. The couple holds hands, their eyes locked in a deep connection, as they say their vows .<br>
+          3. They exchange rings, sealing their love in a moment of profound significance .<br>
+          4. Their families gather for a heartfelt toast, expressing their blessings and well wishes .<br>
+          5. The wedding day is a testament to the power of love and the joy of two souls coming together .<br></td>
+      <td><video width="320" height="240" controls autoplay muted>
+        <source src="./newvideo/ours/story_63.mp4" type="video/mp4">
+      </video></td>
+      <td><video width="320" height="240" controls autoplay muted>
+        <source src="./newvideo/t2vz/story_63.mp4" type="video/mp4">
+      </video></td>
+      <td><video width="320" height="240" controls autoplay muted>
+        <source src="./newvideo/videofusion/story_63.mp4" type="video/mp4">
+      </video></td>
+    </tr><tr>
+      <td>1. The bustling market teems with vibrant colors and lively chatter, as vendors showcase their wares .<br>
+          2. Aromas of spices and fresh produce fill the air, enticing visitors with their tantalizing scents .<br>
+          3. Bargaining voices intermingle, creating a symphony of lively negotiations .<br>
+          4. Shoppers browse through stalls, their eyes alight with curiosity and excitement .<br>
+          5. The market is a vibrant tapestry of culture and commerce, where flavors, sights, and sounds collide .<br></td>
+      <td><video width="320" height="240" controls autoplay muted>
+        <source src="./newvideo/ours/story_72.mp4" type="video/mp4">
+      </video></td>
+      <td><video width="320" height="240" controls autoplay muted>
+        <source src="./newvideo/t2vz/story_72.mp4" type="video/mp4">
+      </video></td>
+      <td><video width="320" height="240" controls autoplay muted>
+        <source src="./newvideo/videofusion/story_72.mp4" type="video/mp4">
+      </video></td>
+    </tr>
+
+    <tr>
+      <td>1. The campers embark on a challenging hike, their determination pushing them forward .<br>
+          2. They reach the summit, rewarded with a panoramic view of majestic mountains .<br>
+          3. They set up camp, their tents dotting the rugged landscape .<br>
+          4. The night sky comes alive with a tapestry of stars, inspiring awe and wonder .<br>
+          5. The camping trip is a testament to their strength, resilience, and love for the great outdoors .<br></td>
+      <td><video width="320" height="240" controls autoplay muted>
+        <source src="./newvideo/ours/story_76.mp4" type="video/mp4">
+      </video></td>
+      <td><video width="320" height="240" controls autoplay muted>
+        <source src="./newvideo/t2vz/story_76.mp4" type="video/mp4">
+      </video></td>
+      <td><video width="320" height="240" controls autoplay muted>
+        <source src="./newvideo/videofusion/story_76.mp4" type="video/mp4">
+      </video></td>
+    </tr>
+    <tr>
+      <td>1. The farm teems with life, as animals roam freely and crops grow in neat rows .<br>
+          2. Cows graze in the fields, their contented mooing filling the air .<br>
+          3. Chickens cluck and peck at the ground, searching for hidden treasures in the soil .<br>
+          4. Farmers tend to their land, their hard work ensuring a bountiful harvest .<br>
+          5. The farm is a testament to the harmonious relationship between humans and nature, where sustenance is nurtured and life thrives .<br></td>
+      <td><video width="320" height="240" controls autoplay muted>
+        <source src="./newvideo/ours/story_77.mp4" type="video/mp4">
+      </video></td>
+      <td><video width="320" height="240" controls autoplay muted>
+        <source src="./newvideo/t2vz/story_77.mp4" type="video/mp4">
+      </video></td>
+      <td><video width="320" height="240" controls autoplay muted>
+        <source src="./newvideo/videofusion/story_77.mp4" type="video/mp4">
+      </video></td>
+    </tr>
+    <tr>
+      <td>1. The mountain peak reaches towards the sky, its majestic silhouette standing tall against the horizon .<br>
+          2. Hikers traverse winding trails, their determination driving them closer to the summit .<br>
+          3. Snow-capped peaks shimmer in the distance, a testament to nature's grandeur .<br>
+          4. The air grows thinner as altitude increases, reminding climbers of the challenges they overcome .<br>
+          5. The mountain is a symbol of triumph and adventure, where breathtaking views reward those who dare to climb .<br></td>
+      <td><video width="320" height="240" controls autoplay muted>
+        <source src="./newvideo/ours/story_78.mp4" type="video/mp4">
+      </video></td>
+      <td><video width="320" height="240" controls autoplay muted>
+        <source src="./newvideo/t2vz/story_78.mp4" type="video/mp4">
+      </video></td>
+      <td><video width="320" height="240" controls autoplay muted>
+        <source src="./newvideo/videofusion/story_78.mp4" type="video/mp4">
+      </video></td>
+    </tr>
+
+    <tr>
+      <td>1. The library is a haven of knowledge, with shelves upon shelves filled with books of every genre .<br>
+          2. Readers lose themselves in captivating stories, their imaginations transported to different worlds .<br>
+          3. The soft rustle of turning pages fills the air, a symphony of exploration and discovery .<br>
+          4. Writers sit at desks, penning their thoughts and giving life to new tales .<br>
+          5. The library is a sanctuary for book lovers and seekers of wisdom, a place where stories come alive .<br></td>
+      <td><video width="320" height="240" controls autoplay muted>
+        <source src="./newvideo/ours/story_79.mp4" type="video/mp4">
+      </video></td>
+      <td><video width="320" height="240" controls autoplay muted>
+        <source src="./newvideo/t2vz/story_79.mp4" type="video/mp4">
+      </video></td>
+      <td><video width="320" height="240" controls autoplay muted>
+        <source src="./newvideo/videofusion/story_79.mp4" type="video/mp4">
+      </video></td>
+    </tr>
+    <tr>
+      <td> 1. The concert hall is alive with anticipation, as musicians tune their instruments and take their positions .<br>
+          2. The conductor raises the baton, signaling the start of a melodic journey .<br>
+          3. Strings resonate with rich tones, woodwinds dance with lightness, and brass blares with boldness .<br>
+          4. Harmonies swell and crescendos crash, enveloping the audience in a symphony of sound .<br>
+          5. The concert hall is a realm of auditory marvels, where music weaves its enchanting spells .<br></td>
+      <td><video width="320" height="240" controls autoplay muted>
+        <source src="./newvideo/ours/story_80.mp4" type="video/mp4">
+      </video></td>
+      <td><video width="320" height="240" controls autoplay muted>
+        <source src="./newvideo/t2vz/story_80.mp4" type="video/mp4">
+      </video></td>
+      <td><video width="320" height="240" controls autoplay muted>
+        <source src="./newvideo/videofusion/story_80.mp4" type="video/mp4">
+      </video></td>
+    </tr>
+    <tr>
+      <td>1. The beach stretches endlessly, its golden sands meeting the rolling waves of the ocean .<br>
+          2. Seagulls glide gracefully overhead, their calls carried by the salty breeze .<br>
+          3. Children build sandcastles, their laughter echoing along the shore .<br>
+          4. Swimmers brave the waves, their joyful splashes a testament to the refreshing waters .<br>
+          5. The beach is a sanctuary of sun, sand, and sea, where relaxation and fun intertwine .<br></td>
+      <td><video width="320" height="240" controls autoplay muted>
+        <source src="./newvideo/ours/story_81.mp4" type="video/mp4">
+      </video></td>
+      <td><video width="320" height="240" controls autoplay muted>
+        <source src="./newvideo/t2vz/story_81.mp4" type="video/mp4">
+      </video></td>
+      <td><video width="320" height="240" controls autoplay muted>
+        <source src="./newvideo/videofusion/story_81.mp4" type="video/mp4">
+      </video></td>
+    </tr>
+    <tr>
+      <td>1. The street market bustles with vendors, their stalls filled with colorful fruits, vegetables, and goods .<br>
+          2. Shoppers browse through the offerings, inspecting and selecting their desired purchases .<br>
+          3. Aromas of exotic spices waft through the air, enticing taste buds and evoking culinary adventures .<br>
+          4. Bargaining and lively conversations fill the market, creating a vibrant atmosphere .<br>
+          5. The street market is a feast for the senses, where the sights, sounds, and flavors of a community come together .<br></td>
+      <td><video width="320" height="240" controls autoplay muted>
+        <source src="./newvideo/ours/story_88.mp4" type="video/mp4">
+      </video></td>
+      <td><video width="320" height="240" controls autoplay muted>
+        <source src="./newvideo/t2vz/story_88.mp4" type="video/mp4">
+      </video></td>
+      <td><video width="320" height="240" controls autoplay muted>
+        <source src="./newvideo/videofusion/story_88.mp4" type="video/mp4">
+      </video></td>
+    </tr><tr>
+      <td>1. The campers hike through a dense forest, their footsteps muffled by the thick carpet of leaves .<br>
+          2. They find a clearing, their tents blending seamlessly with the natural surroundings .<br>
+          3. They gather firewood, the crackling flames casting a soft glow on their faces .<br>
+          4. They sit by the campfire, sharing stories and laughter in the embrace of nature .<br>
+          5. The camping trip is an opportunity to disconnect from the noise of the world and find peace in simplicity .<br></td>
+      <td><video width="320" height="240" controls autoplay muted>
+        <source src="./newvideo/ours/story_94.mp4" type="video/mp4">
+      </video></td>
+      <td><video width="320" height="240" controls autoplay muted>
+        <source src="./newvideo/t2vz/story_94.mp4" type="video/mp4">
+      </video></td>
+      <td><video width="320" height="240" controls autoplay muted>
+        <source src="./newvideo/videofusion/story_94.mp4" type="video/mp4">
+      </video></td>
+    </tr>
+    <tr>
+      <td> 1. The art gallery is a visual feast, with walls adorned with paintings and sculptures .<br>
+          2. Visitors stroll through the exhibits, their eyes captivated by the beauty and creativity on display .<br>
+          3. Artists' stories come alive, their brushstrokes and sculpting techniques speaking volumes .<br>
+          4. Conversations flow, as viewers share interpretations and appreciate the diverse forms of art .<br>
+          5. The art gallery is a sanctuary of inspiration and expression, where creativity transcends boundaries .<br></td>
+      <td><video width="320" height="240" controls autoplay muted>
+        <source src="./newvideo/ours/story_99.mp4" type="video/mp4">
+      </video></td>
+      <td><video width="320" height="240" controls autoplay muted>
+        <source src="./newvideo/t2vz/story_99.mp4" type="video/mp4">
+      </video></td>
+      <td><video width="320" height="240" controls autoplay muted>
+        <source src="./newvideo/videofusion/story_99.mp4" type="video/mp4">
+      </video></td>
+    </tr>
+    <tr>
+      <td> 1. The mountain peak towers above, its majestic beauty reaching towards the heavens .<br>
+          2. Hikers conquer rugged trails, their determination fueled by the promise of breathtaking views .<br>
+          3. Sweeping vistas unfold, a panorama of valleys, forests, and distant horizons .<br>
+         4. Nature's serenade accompanies the ascent, with birdsong and the rustle of leaves on the wind .<br>
+         5. The mountain is a realm of grandeur and serenity, where the journey to the top is rewarded with awe-inspiring vistas .<br></td>
+      <td><video width="320" height="240" controls autoplay muted>
+        <source src="./newvideo/ours/story_100.mp4" type="video/mp4">
+      </video></td>
+      <td><video width="320" height="240" controls autoplay muted>
+        <source src="./newvideo/t2vz/story_100.mp4" type="video/mp4">
+      </video></td>
+      <td><video width="320" height="240" controls autoplay muted>
+        <source src="./newvideo/videofusion/story_100.mp4" type="video/mp4">
+      </video></td>
+    </tr>
+    
+    
+  </table>
+</body>
+</html>
